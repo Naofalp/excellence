@@ -1,10 +1,10 @@
-import merBanner from '../assets/images/mer-banner-modif.jpg';
+import backgroundBanner from '../assets/images/mer-banner-modif.jpg';
 
 export default function Banner() {
     return <>
         <section className="banner-container"
             style={{
-                backgroundImage: `url(${merBanner})`,
+                backgroundImage: `url(${backgroundBanner})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
