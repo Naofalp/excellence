@@ -1,25 +1,50 @@
 @use "../variables.scss" as *;
 
 .banner-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 180px; //espace pour ne pas chevaucher sous la navbar 
     padding-bottom: 80px;
 
+    &_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #7e7e7ecc; //teinte de l'overlay
+    z-index: 1;
+    }
+
+    h1{
+        position: relative;
+        z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
+    }
+
     h2 {
         color: $secondary-color;
         margin-block: 12px;
+
+        position: relative;
+        z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
     }
 
     p {
         color: $primary-color;
         font-weight: 300;
+
+        position: relative;
+        z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
     }
-    
-    &_presentation{
+
+    &_presentation {
         margin-top: 30px;
         margin-bottom: 100px;
+
+        position: relative;
+        z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
     }
 
     &_divider {
@@ -27,12 +52,22 @@
         border-top: 1px solid white;
         margin: 40px 0;
         width: 30%;
+
+        position: relative;
+        z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
     }
 
     &_from {
         font-size: $detail-fontsize;
         margin-top: 0px;
         margin-bottom: 0px;
+
+        position: relative;
+        z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
+
+        span{
+            font-weight: 500 ;
+        }
     }
 }
 
@@ -42,6 +77,9 @@
     gap: 30px;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+    z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
 
     &_actions {
         background-color: $secondary-color;

@@ -1,4 +1,4 @@
-import backgroundBanner from '../assets/images/mer-banner-modif.jpg';
+import backgroundBanner from '../assets/images/bmw.jpg';
 
 export default function Banner() {
     return <>
@@ -8,7 +8,12 @@ export default function Banner() {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-            }}>
+            }}
+        >
+
+            <div className="banner-container_overlay"></div>
+
+
             <h1>
                 EXCELLENCE TRANSFERTS
             </h1>

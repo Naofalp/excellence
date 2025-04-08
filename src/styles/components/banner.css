@@ -1,32 +1,59 @@
 .banner-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 180px;
   padding-bottom: 80px;
 }
+.banner-container_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(126, 126, 126, 0.8);
+  z-index: 1;
+}
+.banner-container h1 {
+  position: relative;
+  z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
+}
 .banner-container h2 {
-  color: #152269;
+  color: #29226d;
   margin-block: 12px;
+  position: relative;
+  z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
 }
 .banner-container p {
   color: white;
   font-weight: 300;
+  position: relative;
+  z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
 }
 .banner-container_presentation {
   margin-top: 30px;
   margin-bottom: 100px;
+  position: relative;
+  z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
 }
 .banner-container_divider {
   border: none;
   border-top: 1px solid white;
   margin: 40px 0;
   width: 30%;
+  position: relative;
+  z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
 }
 .banner-container_from {
   font-size: 16px;
   margin-top: 0px;
   margin-bottom: 0px;
+  position: relative;
+  z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
+}
+.banner-container_from span {
+  font-weight: 500;
 }
 
 .button-container {
@@ -35,13 +62,15 @@
   gap: 30px;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
 }
 .button-container_actions {
-  background-color: #152269;
+  background-color: #29226d;
   color: white;
   padding-block: 10px;
   padding-inline: 25px;
-  border: 4px solid #152269;
+  border: 4px solid #29226d;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
