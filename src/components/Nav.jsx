@@ -1,7 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logos/excellence-logo-png-rogne.png";
+import { useState } from "react";
 
-export default function Header() {
+export default function Nav() {
     return <>
         <nav className="nav-header">
             <NavLink to="/" className={({ isActive }) => (isActive ? "nav-header_link active-link" : "nav-header_link")}>
