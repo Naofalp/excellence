@@ -1,0 +1,20 @@
+@use '../variables.scss' as *;
+
+.nav-header {
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    align-items: center;
+
+    &_link {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: $detail-fontsize;
+        color: $primary-color;
+
+        img {
+            width: 80px;
+            padding-block: 10px;
+        }
+    }
+}

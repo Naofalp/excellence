@@ -1,6 +1,14 @@
-@use '../styles/variables.scss' as *;
+@use '../styles/variables.scss' as v;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+
+* {
+    font-family: "Noto Sans JP";
+}
 
 body{
-    background: $primary-color;
-    font-size: $basic-fontsize;
+    background: v.$background-color;
+    font-size: v.$basic-fontsize;
+    margin: 0;
+    padding: 0;
 }

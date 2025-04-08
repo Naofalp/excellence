@@ -1,4 +1,24 @@
 body {
-  background: white;
+  background: rgb(255, 247, 240);
   font-size: 20px;
+  margin: 0px;
+}
+
+.headerBand {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(35, 35, 35, 0.8);
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.nav-header_link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 15px;
 }/*# sourceMappingURL=main.css.map */

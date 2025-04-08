@@ -1,0 +1,8 @@
+@use '../variables.scss' as *;
+
+.headerBand {
+    display: flex;
+    justify-content: center;
+    background-color: $header-color;
+    padding-inline: 80px;
+}

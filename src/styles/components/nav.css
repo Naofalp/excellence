@@ -1,0 +1,16 @@
+.nav-header {
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  align-items: center;
+}
+.nav-header_link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
+.nav-header_link img {
+  width: 80px;
+  padding-block: 10px;
+}/*# sourceMappingURL=nav.css.map */
