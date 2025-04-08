@@ -1,7 +1,15 @@
 @use '../variables.scss' as *;
 
 .headerBand {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: $header-color;
+
     display: flex;
     justify-content: center;
+    
     background-color: $header-color;
 }
