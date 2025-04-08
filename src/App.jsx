@@ -7,7 +7,7 @@ import Services from "./pages/Services";
 function App() {
 
   useEffect(() => {
-    document.title = "Excellence Taxi"
+    document.title = "Excellence Transferts Vtc"
   }, []);
 
   return (
