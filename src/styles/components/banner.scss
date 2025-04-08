@@ -1,0 +1,63 @@
+@use "../variables.scss" as *;
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 180px; //espace pour ne pas chevaucher sous la navbar 
+    padding-bottom: 80px;
+
+    h2 {
+        color: $secondary-color;
+        margin-block: 12px;
+    }
+
+    p {
+        color: $primary-color;
+        font-weight: 300;
+    }
+    
+    &_presentation{
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+
+    &_divider {
+        border: none;
+        border-top: 1px solid white;
+        margin: 40px 0;
+        width: 30%;
+    }
+
+    &_from {
+        font-size: $detail-fontsize;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+    &_actions {
+        background-color: $secondary-color;
+        color: $primary-color;
+        padding-block: 10px;
+        padding-inline: 25px;
+        border: 4px solid $secondary-color;
+        cursor: pointer;
+        font-size: $detail-fontsize;
+        font-weight: $button-fontweight;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}
