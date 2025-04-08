@@ -3,12 +3,12 @@
 .nav-header {
     display: flex;
     justify-content: space-around;
-    gap: 80px;
+    gap: 120px;
     align-items: center;
 
     &_link {
         text-decoration: none;
-        font-weight: 600;
+        font-weight: 550;
         font-size: $detail-fontsize;
         color: $primary-color;
 

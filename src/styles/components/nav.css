@@ -1,12 +1,12 @@
 .nav-header {
   display: flex;
   justify-content: space-around;
-  gap: 80px;
+  gap: 120px;
   align-items: center;
 }
 .nav-header_link {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 550;
   font-size: 16px;
   color: white;
 }
