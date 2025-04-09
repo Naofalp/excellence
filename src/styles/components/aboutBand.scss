@@ -1,0 +1,68 @@
+@use '../variables.scss' as *;
+
+.aboutBand-container {
+    padding-block: 40px;
+    padding-inline: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    align-items: center;
+
+    @media (max-width: $laptop-breakpoint) {
+        padding-block: 40px;
+        padding-inline: 100px;
+        gap: 150px;    
+    }
+    
+    @media (max-width: $tablette-breakpoint) {
+        flex-direction: column;
+        text-align: center;
+        gap: 80px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        padding-inline: 5%;
+
+    }
+
+    img {
+        width: 465px;
+        max-width: 500px;
+        height: auto;
+
+        @media (max-width: 1294px) {
+            width: 35%;
+        }
+    }
+
+    &_textdiv {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        flex: 1;
+
+        @media (max-width: $tablette-breakpoint) {
+            align-items: center;
+        }
+
+        &_divider{
+            border: none;
+            border-top: 3px solid $secondary-color;
+            margin: 0;
+            width: 15%;
+            margin-bottom: 40px;
+        }
+
+        p{
+            margin: 0;
+            text-align: justify;
+
+            @media (max-width: 1294px) {
+                h2 {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
