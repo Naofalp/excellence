@@ -10,6 +10,25 @@
 
     display: flex;
     justify-content: center;
-    
-    background-color: $header-color;
+
+    &_logo {
+        width: 60px;
+        padding-block: 7px;
+        display: none;
+
+        @media (max-width: $mobile-breakpoint) {
+            display: block;
+        }
+    }
+
+    &_content {
+        display: flex;
+
+        @media (max-width: $mobile-breakpoint) {
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding-inline: 20px;
+        }
+    }
 }

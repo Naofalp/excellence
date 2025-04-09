@@ -6,19 +6,56 @@
     gap: 120px;
     align-items: center;
 
+    @media (max-width: $medium-breakpoint) {
+        gap: 60px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        display: none;
+    }
+    &_open{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 71px; //Le menu deroulant commence à partir de 71px du haut (taille du header)
+        right: 0;
+        background-color: $header-color;
+        width: 100%;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
     &_link {
         text-decoration: none;
         font-weight: 550;
         font-size: $detail-fontsize;
         color: $primary-color;
 
+
         img {
             width: 80px;
-            padding-block: 10px;
+            padding-block: 8px;
+
+            @media (max-width: $mobile-breakpoint) {
+                display: none;
+            }
         }
     }
 }
 
-.nav-header_link.active-link{
+.nav-menu-toggle{
+    display: none;
+
+    @media (max-width: $mobile-breakpoint) {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        padding: 0px;
+      }
+}
+
+.nav-header_link.active-link {
     color: $secondary-color
 }
