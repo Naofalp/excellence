@@ -10,7 +10,7 @@ export default function Header() {
                 <NavLink to="/">
                     <img
                         src={logo}
-                        alt="logo du service de taxi excellence transfert "
+                        alt="logo du service de taxi et vtc excellence transfert "
                         className="headerBand_logo"
                     />
                 </NavLink>
