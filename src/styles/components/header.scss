@@ -11,6 +11,10 @@
     display: flex;
     justify-content: center;
 
+    &--red {
+        background-color: black;
+      }
+
     &_logo {
         width: 60px;
         padding-block: 7px;
