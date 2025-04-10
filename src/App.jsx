@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Footer from "./components/Footer";
+import FloatingButtons from "./components/FloatingButtons";
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
         {/* Route page d'acceuil Services*/}
         <Route path="/Services" element={<Services />} />
       </Routes>
-      <Footer/>
+      <FloatingButtons />
+      <Footer />
     </>
   )
 }

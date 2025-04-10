@@ -31,7 +31,7 @@ export default function ServiceBand() {
                             backgroundImage: `url(${service.bg})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
-                            color: 'white'
+                            color: 'black'
                         }}
                         >
                             <div className="ServiceBand-card_overlay"></div>
@@ -50,7 +50,7 @@ export default function ServiceBand() {
                             backgroundImage: `url(${service.bg})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
-                            color: 'white'
+                            color: 'black'
                         }}
                         >
                             <div className="ServiceBand-card_overlay"></div>
