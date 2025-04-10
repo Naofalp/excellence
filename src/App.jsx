@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import { Route, Routes } from "react-router";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         {/* Route page d'acceuil Services*/}
         <Route path="/Services" element={<Services />} />
       </Routes>
+      <Footer/>
     </>
   )
 }

@@ -1,0 +1,69 @@
+@use "../variables.scss" as *;
+
+.footer-container {
+    background-color: black;
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+
+    p {
+        color: $primary-color;
+        margin: 0;
+        font-size: $footer-fontsize;
+    }
+
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    &_icon {
+        color: white;
+        font-size: 25px;
+        transition: transform 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            transform: scale(1.2);
+            color: #007bff;
+        }
+    }
+}
+
+.footer-wrights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 100px;
+
+    @media (max-width: $tablette-breakpoint) {
+        padding-inline: 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    &_copywright {
+        color: $primary-color;
+        font-size: $footer-fontsize;
+    }
+
+    &_credit {
+        font-size: 0.9rem;
+        color: #b0b0b0;
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
