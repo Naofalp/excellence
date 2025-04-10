@@ -1,6 +1,7 @@
 import Banner from "../components/Banner";
 import AboutBand from "../components/AboutBand";
 import ServiceBand from "../components/ServicesBand";
+import Avantages from "../components/Avantages";
 
 export default function Home() {
     return <>
@@ -8,7 +9,7 @@ export default function Home() {
         <Banner />
         <AboutBand/>
         <ServiceBand/>
-
+        <Avantages/>
 
     </>
 }

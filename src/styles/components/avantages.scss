@@ -1,0 +1,75 @@
+@use "../variables.scss" as *;
+
+.avantages-container {
+    background-color: #232323;
+    padding-top: 17px;
+    padding-bottom: 80px;
+    padding-inline: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    @media (max-width: $tablette-breakpoint) {
+        padding-inline: 30px;
+        padding-block: 40px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        padding-inline: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        color: $primary-color;
+    }
+
+    &_flex {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        @media (max-width: $tablette-breakpoint) {
+            flex-direction: column;
+        }
+    }
+
+    &_duo{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        @media (max-width: $mobile-breakpoint) {
+            flex-direction: column;
+        }
+    }
+}
+
+.avantages-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    &_grosnum {
+        margin: 0;
+        color: $secondary-color;
+        font-size: 150px;
+        font-weight: 900;
+    }
+
+    &_title {
+        margin-top: -140px;
+        color: $primary-color;
+        font-size: 30px;
+
+    }
+
+    &_text {
+        margin-top: 50px;
+        margin-bottom: 0;
+        color: $primary-color;
+        text-align: justify;
+    }
+}
