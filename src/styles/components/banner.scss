@@ -149,7 +149,8 @@
         @media (max-width: $mobile-breakpoint) {
             width: 230px;
             padding-block: 5px;
-            padding-inline: 12px
+            padding-inline: 12px;
+            border: 2px solid $secondary-color;
         }
 
         &:hover {
