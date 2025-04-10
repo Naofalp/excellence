@@ -1,0 +1,16 @@
+@use "../variables.scss" as *;
+
+.serviceBanner-band {
+    padding-top: 130px; //espace pour ne pas chevaucher sous la navbar 
+    padding-bottom: 50px;
+    background-color: $secondary-color;
+
+    @media (max-width: $tablette-breakpoint) {
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        padding-top: 80px;
+    }
+}
