@@ -14,9 +14,10 @@ export default function AboutBand() {
                 </h2>
                 <hr className="aboutBand-container_textdiv_divider" />
                 <p>
-                    Que ce soit pour un voyage d'affaires, des vacances ou encore raisons médicales.
-                    Excellence transfert est à votre disposition pour vous proposer un service de transport fiable et adapté pour tout vos trajets.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <p>
+                        Depuis plus de 7 ans, Excellence Transfert met à votre disposition un chauffeur privé expérimenté pour tous vos besoins en transport. Que vous partiez pour un voyage d'affaires, une escapade touristique ou un rendez-vous médical, nous assurons un service fiable, ponctuel et discret.
+                        Notre flotte de véhicules confortables s’adapte à chaque demande : transferts aéroport ou gare, mise à disposition, événements privés ou trajets longue distance. Avec Excellence Transfert, vous êtes entre de bonnes mains.
+                    </p>
                 </p>
             </div>
         </section>
