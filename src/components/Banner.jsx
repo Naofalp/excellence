@@ -8,11 +8,9 @@ export default function Banner() {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-            }}
-        >
+            }} >
 
             <div className="banner-container_overlay"></div>
-
 
             <h1>
                 EXCELLENCE TRANSFERTS

@@ -8,6 +8,15 @@
     padding-top: 180px; //espace pour ne pas chevaucher sous la navbar 
     padding-bottom: 80px;
 
+    @media (max-width: $tablette-breakpoint) {
+        padding-top: 130px;
+        padding-bottom: 50px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        padding-top: 80px;
+    }
+
     &_overlay {
     position: absolute;
     top: 0;
@@ -21,30 +30,60 @@
     h1{
         position: relative;
         z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
+
+        @media (max-width: $tablette-breakpoint) {
+            font-size: 60px;
+        }
+    
+        @media (max-width: $mobile-breakpoint) {
+            font-size: 50px;
+        }
     }
 
     h2 {
-        color: $secondary-color;
-        margin-block: 12px;
-
         position: relative;
         z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
+        
+        color: $secondary-color;
+        margin-block: 12px;
+        text-align: center;
+
+        @media (max-width: $tablette-breakpoint) {
+            font-size: 36px;
+        }
+    
+        @media (max-width: $mobile-breakpoint) {
+            margin-top: 18px;
+            margin-bottom: 0;
+            font-size: 30px;
+        }
     }
 
     p {
         color: $primary-color;
         font-weight: 300;
+        text-align: center;
 
         position: relative;
         z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
     }
 
     &_presentation {
+        position: relative;
+        z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
+    
         margin-top: 30px;
         margin-bottom: 100px;
 
-        position: relative;
-        z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
+        @media (max-width: $tablette-breakpoint) {
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: $mobile-breakpoint) {
+            padding-inline: 5%;
+            text-align: justify;
+        }
+
     }
 
     &_divider {
@@ -55,6 +94,12 @@
 
         position: relative;
         z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
+
+        
+        @media (max-width: $mobile-breakpoint) {
+            margin: 25px 0;
+            margin-bottom: 7px;
+        }
     }
 
     &_from {
@@ -81,6 +126,11 @@
     position: relative;
     z-index: 2; /* Pour qu'ils passent au-dessus de l'overlay */
 
+    @media (max-width: $mobile-breakpoint) {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     &_actions {
         background-color: $secondary-color;
         color: $primary-color;
@@ -92,7 +142,15 @@
         font-weight: $button-fontweight;
         transition: all 0.3s ease;
         text-decoration: none;
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: $mobile-breakpoint) {
+            width: 230px;
+            padding-block: 5px;
+            padding-inline: 12px
+        }
 
         &:hover {
             background-color: transparent;
