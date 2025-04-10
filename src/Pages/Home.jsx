@@ -5,11 +5,9 @@ import Avantages from "../components/Avantages";
 
 export default function Home() {
     return <>
-
         <Banner />
         <AboutBand/>
         <ServiceBand/>
         <Avantages/>
-
     </>
 }
