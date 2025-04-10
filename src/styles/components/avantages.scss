@@ -4,7 +4,7 @@
     background-color: #232323;
     padding-top: 17px;
     padding-bottom: 80px;
-    padding-inline: 90px;
+    padding-inline: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,6 +39,7 @@
         display: flex;
         flex-direction: row;
         gap: 30px;
+        width: 100%;
 
         @media (max-width: $mobile-breakpoint) {
             flex-direction: column;
@@ -51,6 +52,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 100%;
 
     &_grosnum {
         margin: 0;
@@ -63,7 +65,8 @@
         margin-top: -140px;
         color: $primary-color;
         font-size: 30px;
-
+        text-align: center;
+        width: 100%;
     }
 
     &_text {
