@@ -19,7 +19,7 @@ export default function Banner() {
                 RESERVEZ VOTRE TAXI DISPONIBLE IMMÉDIATEMENT
             </h2>
             <p className="banner-container_presentation">
-                Un chauffeur professionnel assure vos déplacements personnalisés, courts ou longues distances. Vers les gares, aeroports et hôpitaux.
+                Un chauffeur professionnel assure vos déplacements personnalisés, courts ou longues distances. Devenez maîtres de vos trajets.
             </p>
             <div className="button-container">
                 <a className="button-container_actions" href="tel:+1234567890">
@@ -32,7 +32,7 @@ export default function Banner() {
 
             <hr className="banner-container_divider" />
 
-            <p className="banner-container_from">A votre service <span>depuis 2018</span>, Usclas d'Hérault.</p>
+            <p className="banner-container_from">A votre service <span>depuis 2018</span>– Basé à Usclas-d'Hérault (34).</p>
         </section>
     </>
 }
