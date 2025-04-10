@@ -1,8 +1,8 @@
-import img1 from "../assets/images/decollage.jpg";
-import img2 from "../assets/images/chauffeur.jpg";
-import img3 from "../assets/images/bagues.jpg";
-import img4 from "../assets/images/mannequin.jpg";
-import img5 from "../assets/images/mer-banner.jpg";
+import img1 from "../assets/images/decollage.webp";
+import img2 from "../assets/images/chauffeur.webp";
+import img3 from "../assets/images/bagues.webp";
+import img4 from "../assets/images/mannequin.webp";
+import img5 from "../assets/images/mer-banner.webp";
 
 export default function ServiceBand() {
 
