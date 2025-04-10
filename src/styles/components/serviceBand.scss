@@ -1,0 +1,149 @@
+@use "../variables.scss" as *;
+
+.ServiceBand-container {
+    padding-block: 80px;
+    padding-inline: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+
+    @media (max-width: $tablette-breakpoint) {
+        padding-inline: 10px;
+        padding-block: 40px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        padding-inline: 5px;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    &_flex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+    }
+
+    &_ligne {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5px;
+
+        @media (max-width: $mobile-breakpoint) {
+            flex-direction: column;
+        }
+    }
+}
+
+.ServiceBand-card {
+    position: relative;
+    background: #f9f9f9;
+    padding-block: 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 5px;
+
+    @media (max-width: $tablette-breakpoint) {
+        padding-block: 25px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        border-radius: 4px;
+    }
+
+    &_overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0 0 0 / 60%); //teinte de l'overlay
+        z-index: 1;
+
+        @media (max-width: $mobile-breakpoint) {
+            border-radius: 4px;
+        }
+    }
+
+    h3 {
+        position: relative;
+        z-index: 2;
+
+        font-size: 30px;
+        color: $primary-color;
+        margin: 0;
+
+        @media (max-width: $tablette-breakpoint) {
+            font-size: 24px;
+        }
+    }
+
+    p {
+        position: relative;
+        z-index: 2;
+
+        font-size: $detail-fontsize;
+        color: $primary-color;
+        margin: 0;
+
+        @media (max-width: $tablette-breakpoint) {
+            font-size: 14px;
+        }
+
+        @media (max-width: $mobile-breakpoint) {}
+    }
+
+    button {
+        position: relative;
+        z-index: 2;
+
+        background-color: $secondary-color;
+        color: $primary-color;
+        padding-block: 5px;
+        padding-inline: 12px;
+        margin-top: 50px;
+        border: 2px solid $secondary-color;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: $button-fontweight;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: $tablette-breakpoint) {
+            font-size: 12px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: $mobile-breakpoint) {
+            padding-block: 5px;
+            padding-inline: 12px
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: $secondary-color;
+        }
+    }
+
+}
+
+.cardLigne1 {
+    width: 100%;
+}
+
+.cardLigne2 {
+    width: 100%;
+}
