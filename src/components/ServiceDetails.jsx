@@ -7,7 +7,7 @@ import img5 from "../assets/images/mer-banner_11zon.webp";
 export default function ServiceDetails() {
     return <>
         <section className="serviceDetails-container">
-            <div className="serviceDetails-detail">
+            <div id="transferts" className="serviceDetails-detail">
                 <div className="serviceDetails-detail_bloctext align-right">
                     <h2>Transferts</h2>
                     <p> Vous avez un avion à prendre ou un train à ne pas manquer ? Nos transferts vers les aéroports (Montpellier, Marseille),
@@ -17,7 +17,7 @@ export default function ServiceDetails() {
                 </div>
                 <img src={img1} loading="lazy" alt="Avion au milieu des nuages avec coucher de soleil" className="serviceDetails-img" />
             </div>
-            <div className="serviceDetails-detail">
+            <div id="mise-a-disposition" className="serviceDetails-detail">
                 <img src={img2} loading="lazy" alt="Chauffeur de taxi et VTC au volant de sa voiture vu de derrière" className="serviceDetails-img" />
                 <div className="serviceDetails-detail_bloctext ">
                     <h2>Mise à disposition</h2>
@@ -27,7 +27,7 @@ export default function ServiceDetails() {
                     </p>
                 </div>
             </div>
-            <div className="serviceDetails-detail">
+            <div id="evenements" className="serviceDetails-detail">
                 <div className="serviceDetails-detail_bloctext align-right">
                     <h2>Événements</h2>
                     <p> Mariage, baptême, séminaire ou soirée d’entreprise ? Confiez vos trajets à Excellence Transferts. Nous assurons vos déplacements événementiels
@@ -37,7 +37,7 @@ export default function ServiceDetails() {
                 </div>
                 <img src={img3} loading="lazy" alt="Bagues de mariages posées une sur l'autres" className="serviceDetails-img" />
             </div>
-            <div className="serviceDetails-detail">
+            <div id="medical" className="serviceDetails-detail">
                 <img src={img4} loading="lazy" alt="Mannequin de médecine" className="serviceDetails-img" />
                 <div className="serviceDetails-detail_bloctext">
                     <h2>Médical</h2>
@@ -47,7 +47,7 @@ export default function ServiceDetails() {
                     </p>
                 </div>
             </div>
-            <div className="serviceDetails-detail">
+            <div id="tourisme" className="serviceDetails-detail">
                 <div className="serviceDetails-detail_bloctext align-right">
                     <h2>Tourisme</h2>
                     <p> Découvrez les merveilles de l’Hérault et de l’Occitanie avec un chauffeur privé local. Que ce soit pour visiter le Cap d’Agde, les plages de Palavas,

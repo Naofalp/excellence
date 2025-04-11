@@ -118,7 +118,9 @@
         }
     }
 
-    button {
+    &_button {
+        position: relative;
+        z-index: 2;
         background-color: $secondary-color;
         color: $primary-color;
         padding-block: 5px;
