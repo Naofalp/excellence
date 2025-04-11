@@ -1,0 +1,60 @@
+@use "../variables.scss" as *;
+
+.reservationBand-container {
+    padding-block: 50px;
+    padding-inline: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    width: 100%;
+    background: white;
+
+    @media (max-width: 1024px) {
+        padding-inline: 40px;
+        gap: 60px;
+    }
+
+    @media (max-width: 908px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: $tablette-breakpoint) {
+        padding-inline: 0px;
+        padding-block: 40px;
+        gap: 40px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        padding-inline: 5px;
+    }
+
+    &_bloctext {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+
+            @media (max-width: 908px) {
+                padding-inline: 30px;
+            }
+
+            
+            @media (max-width: 450px) {
+                padding-inline: 20px;
+            }
+
+        h2{
+            @media (max-width: 908px) {
+                text-align: center;
+            }
+        }
+
+        p {
+            @media (max-width: 908px) {
+                text-align: justify;
+                margin: 0;
+            }
+        }
+    }
+}
