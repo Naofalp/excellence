@@ -27,7 +27,7 @@ export default function Nav() {
             <NavLink to="/" className="nav-header_link">
                 <img
                     src={logo}
-                    alt="logo du service de taxi excellence transfert "
+                    alt="logo du service de taxi et vtc excellence transfert "
                 />
             </NavLink>
             <NavLink to="/Services" onClick={handleLinkClick} className={({ isActive }) => (isActive ? "nav-header_link active-link" : "nav-header_link")}>
