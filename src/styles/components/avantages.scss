@@ -30,7 +30,7 @@
         flex-direction: row;
         gap: 30px;
 
-        @media (max-width: $tablette-breakpoint) {
+        @media (max-width: 908px) {
             flex-direction: column;
         }
     }
