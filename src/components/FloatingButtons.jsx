@@ -4,7 +4,7 @@ export default function FloatingButtons() {
   return (
     <>
       <a
-        href="tel:+33102030405"
+        href="tel:+33760492366"
         className="floating-button phone"
         aria-label="Appeler Excellence Transferts"
       >
@@ -12,7 +12,7 @@ export default function FloatingButtons() {
       </a>
 
       <a
-        href="https://wa.me/33102030405"
+        href="https://wa.me/33760492366"
         className="floating-button whatsapp"
         target="_blank"
         rel="noopener noreferrer"

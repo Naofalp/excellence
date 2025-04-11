@@ -22,8 +22,8 @@ export default function Banner() {
                 Un chauffeur professionnel assure vos déplacements personnalisés, courts ou longues distances. Devenez maîtres de vos trajets.
             </p>
             <div className="button-container">
-                <a className="button-container_actions" href="tel:+1234567890">
-                    Appeler : 01 02 03 04 05
+                <a className="button-container_actions" href="tel:+33760492366">
+                    Appeler : 07 60 49 23 66
                 </a>
                 <button className="button-container_actions" >
                     Reserver
