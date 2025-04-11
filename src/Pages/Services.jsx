@@ -4,7 +4,9 @@ import ServiceDetails from "../components/ServiceDetails";
 
 export default function Services() {
     return <>
-    <ServiceBanner/>
-    <ServiceDetails/>
+        <main>
+            <ServiceBanner />
+            <ServiceDetails />
+        </main>
     </>
 }
