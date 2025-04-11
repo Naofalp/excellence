@@ -1,4 +1,4 @@
-import aboutBandPro from '../assets/images/about-costume.png'
+import aboutBandPro from '../assets/images/about-costume.webp'
 
 
 export default function AboutBand() {
