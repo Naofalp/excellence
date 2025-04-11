@@ -6,7 +6,7 @@ export default function AboutBand() {
         <section className="aboutBand-container">
             <img
                 src={aboutBandPro}
-                alt="chauffeur excellence transfert tenue professionnelle costume et montre"
+                alt="chauffeur de taxi excellence transfert tenue professionnelle costume et montre"
             />
             <div className='aboutBand-container_textdiv'>
                 <h2>

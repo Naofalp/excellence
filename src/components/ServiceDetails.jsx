@@ -15,10 +15,10 @@ export default function ServiceDetails() {
                         à bord d’un véhicule confortable et haut de gamme, sur de courtes ou longues distances.
                     </p>
                 </div>
-                <img src={img1} alt="Votre description de l’image ici" className="serviceDetails-img" />
+                <img src={img1} alt="Avion au milieu des nuages avec coucher de soleil" className="serviceDetails-img" />
             </div>
             <div className="serviceDetails-detail">
-                <img src={img2} alt="Votre description de l’image ici" className="serviceDetails-img" />
+                <img src={img2} alt="Chauffeur de taxi et VTC au volant de sa voiture vu de derrière" className="serviceDetails-img" />
                 <div className="serviceDetails-detail_bloctext ">
                     <h2>Mise à disposition</h2>
                     <p> Besoin d’un chauffeur dédié pour quelques heures ou toute une journée ? Notre service de mise à disposition VTC à Montpellier vous
@@ -35,10 +35,10 @@ export default function ServiceDetails() {
                         plus importants.
                     </p>
                 </div>
-                <img src={img3} alt="Votre description de l’image ici" className="serviceDetails-img" />
+                <img src={img3} alt="Bagues de mariages posées une sur l'autres" className="serviceDetails-img" />
             </div>
             <div className="serviceDetails-detail">
-                <img src={img4} alt="Votre description de l’image ici" className="serviceDetails-img" />
+                <img src={img4} alt="Mannequin de médecine" className="serviceDetails-img" />
                 <div className="serviceDetails-detail_bloctext">
                     <h2>Médical</h2>
                     <p> Pour vos rendez-vous médicaux, consultations ou soins réguliers, profitez d’un service fiable et humain. Nous proposons des transports assis
@@ -55,7 +55,7 @@ export default function ServiceDetails() {
                         à votre rythme, en toute sérénité.
                     </p>
                 </div>
-                <img src={img5} alt="Votre description de l’image ici" className="serviceDetails-img" />
+                <img src={img5} alt="Mer qui deborde sur la plage de Montpellier Héraults" className="serviceDetails-img" />
             </div>
         </section>
     </>
