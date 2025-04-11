@@ -26,16 +26,14 @@ export default function ServiceBand() {
             <div className="ServiceBand-container_flex">
                 <div className="ServiceBand-container_ligne"> {/** Premiere ligne de services */}
                     {servicesLigne1.map((service, index) => (
-                        <div key={index} className={`ServiceBand-card cardLigne1`}
-                        style={{
-                            backgroundImage: `url(${service.bg})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            color: 'black'
-                        }}
-                        >
+                        <div key={index} className={`ServiceBand-card cardLigne1`}>
+                            <img
+                                src={service.bg}
+                                alt={`Service ${service.title}`}
+                                loading="lazy"
+                                className="ServiceBand-card_bg"
+                            />
                             <div className="ServiceBand-card_overlay"></div>
-
                             <h3>{service.title}</h3>
                             <p>{service.text}</p>
                             <button>Voir plus</button>
@@ -45,16 +43,14 @@ export default function ServiceBand() {
 
                 <div className="ServiceBand-container_ligne"> {/** Deuxième ligne de services */}
                     {servicesLigne2.map((service, index) => (
-                        <div key={index} className={`ServiceBand-card cardLigne2`}
-                        style={{
-                            backgroundImage: `url(${service.bg})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            color: 'black'
-                        }}
-                        >
+                        <div key={index} className={`ServiceBand-card cardLigne2`}>
+                            <img
+                                src={service.bg}
+                                alt={`Service ${service.title}`}
+                                loading="lazy"
+                                className="ServiceBand-card_bg"
+                            />
                             <div className="ServiceBand-card_overlay"></div>
-
                             <h3>{service.title}</h3>
                             <p>{service.text}</p>
                             <button>Voir plus</button>

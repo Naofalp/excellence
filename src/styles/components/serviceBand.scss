@@ -52,6 +52,7 @@
     align-items: center;
     gap: 10px;
     padding-inline: 5px;
+    overflow: hidden;
 
     @media (max-width: $tablette-breakpoint) {
         padding-block: 25px;
@@ -61,13 +62,28 @@
         border-radius: 4px;
     }
 
+    // ✅ IMAGE DE FOND EN <img>
+    &_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+
+        @media (max-width: $mobile-breakpoint) {
+            border-radius: 4px;
+        }
+    }
+
     &_overlay {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgb(0 0 0 / 60%); //teinte de l'overlay
+        background: rgb(0 0 0 / 60%);
         z-index: 1;
 
         @media (max-width: $mobile-breakpoint) {
@@ -75,10 +91,14 @@
         }
     }
 
-    h3 {
+    h3,
+    p,
+    button {
         position: relative;
         z-index: 2;
+    }
 
+    h3 {
         font-size: 30px;
         color: $primary-color;
         margin: 0;
@@ -89,9 +109,6 @@
     }
 
     p {
-        position: relative;
-        z-index: 2;
-
         font-size: $detail-fontsize;
         color: $primary-color;
         margin: 0;
@@ -99,14 +116,9 @@
         @media (max-width: $tablette-breakpoint) {
             font-size: 14px;
         }
-
-        @media (max-width: $mobile-breakpoint) {}
     }
 
     button {
-        position: relative;
-        z-index: 2;
-
         background-color: $secondary-color;
         color: $primary-color;
         padding-block: 5px;
@@ -137,8 +149,8 @@
             color: $secondary-color;
         }
     }
-
 }
+
 
 .cardLigne1 {
     width: 100%;
