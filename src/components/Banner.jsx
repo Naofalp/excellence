@@ -1,4 +1,4 @@
-import backgroundBanner from '../assets/images/bmw.webp';
+import backgroundBanner from '../assets/images/voitures.webp';
 
 export default function Banner() {
     return <>
